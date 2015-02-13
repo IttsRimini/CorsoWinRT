@@ -1,0 +1,66 @@
+﻿<Page
+    x:Class="WinPhone_Uno.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinPhone_Uno"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        
+        <Pivot>
+            
+            <PivotItem Header="Primo">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <Button Click="Button_Click1">Mercedes</Button>
+                        <Button Click="Button_Click2">Fiat</Button>
+                    </StackPanel>
+
+                    <Image Grid.Row="1" Name="imgBella" Source="http://automobili.gear.host/images/Audi.jpg"></Image>
+
+                </Grid>                
+            </PivotItem>
+            
+            <PivotItem Header="Secondo">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <Button Click="Button_Click3">Mercedes</Button>
+                        <Button Click="Button_Click4">Fiat</Button>
+                    </StackPanel>
+
+                    <WebView Grid.Row="1" Name="wvBella"></WebView>
+
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="Terzo">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <Button Click="Button_Click5">Go</Button>
+                    </StackPanel>
+
+                    <MediaElement Name="mPlayer" Source="common/WP_20150211_006.mp4" Grid.Row="1"></MediaElement>
+
+                </Grid>
+            </PivotItem>
+        </Pivot>
+        
+    </Grid>
+</Page>

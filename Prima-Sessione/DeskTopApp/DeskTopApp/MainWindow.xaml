@@ -1,0 +1,38 @@
+﻿<Window x:Class="DeskTopApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0">P1</Button>
+            <Button Grid.Column="1">P2</Button>
+            <Button Grid.Column="2">P3</Button>
+            <Button Grid.Column="3">P4</Button>
+            <Button Grid.Column="4">P5</Button>
+        </Grid>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Height="40" Width="100" Click="Button_Click">P Stack 1</Button>
+            <Button Height="40" Width="100" Click="Button_Click_1">P Stack 2</Button>
+            <Button Height="40" Width="100">P Stack 3</Button>
+        </StackPanel>
+
+        <DataGrid Grid.Row="2" Name="dgDati"></DataGrid>
+
+    </Grid>
+</Window>
